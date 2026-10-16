@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff8f0;
+    text-align: center;
+}
+
+nav {
+    background: #292929;
+    color: white;
+    padding: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h2 { color: #ff7849; }
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    transition: color 0.3s;
+}
+
+.links a:hover { color: #ff7849; }
+
+.hero {
+    padding: 100px 20px;
+    color: white;
+    background: linear-gradient(#0007, #0007),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400")
+    center/cover;
+}
+
+.hero h1 { font-size: 38px; margin-bottom: 15px; }
+.hero p { margin-bottom: 25px; }
+
+.btn {
+    background: #e94e24;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover { background: #a83215; }
+
+section { padding: 40px 7%; }
+section h2 { margin-bottom: 25px; }
+
+.offers, .grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.offer, .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #0002;
+    flex: 1 1 200px;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.offer { background: #ffe0c2; font-weight: bold; }
+
+.card:hover, .offer:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 { margin: 12px 0; }
+.card p { color: #e94e24; font-weight: bold; }
+
+#contact { background: #ffe9d6; }
+#contact p { margin: 10px; }
+
+footer {
+    background: #292929;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    nav { flex-direction: column; gap: 15px; }
+    .links a { display: inline-block; margin: 5px; }
+    .hero h1 { font-size: 28px; }
+    section { padding: 30px 5%; }
+}
